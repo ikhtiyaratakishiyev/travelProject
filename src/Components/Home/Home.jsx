@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
 
-import './home.scss'
+import video from "../../Assets/video.mp4";
+
+import "./home.scss";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section className="home">
+      <div className="overlay">
+        <h1>Home</h1>
+      </div>
 
-export default Home
+      <video className="video" autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
+    </section>
+  );
+};
+
+export default Home;
