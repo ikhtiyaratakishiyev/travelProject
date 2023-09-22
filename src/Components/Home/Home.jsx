@@ -6,7 +6,7 @@ import {AiOutlineInstagram} from 'react-icons/ai'
 import {SiTripadvisor} from 'react-icons/si'
 import {BsListTask} from 'react-icons/bs'
 import {TbApps} from 'react-icons/tb'
-import video from "../../Assets/video.mp4";
+import video from "../../Assets/Videos/video.mp4";
 
 import "./home.scss";
 

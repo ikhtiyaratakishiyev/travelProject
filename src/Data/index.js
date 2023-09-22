@@ -7,6 +7,9 @@ import img6 from '../Assets/Images/img6.jpg'
 import img7 from '../Assets/Images/img7.jpg'
 import img8 from '../Assets/Images/img8.jpg'
 import img9 from '../Assets/Images/img9.jpg'
+import img10 from '../Assets/Images/img10.jpg'
+import img11 from '../Assets/Images/img11.jpg'
+import img12 from '../Assets/Images/img12.jpg'
 
 export const travelData = [
     {
@@ -90,4 +93,32 @@ export const travelData = [
         fees: '$500',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius accusamus sunt, facilis vitae delectus veniam nobis'
     },
+    {
+        id:'10',
+        imgSrc:img10,
+        destTitle: 'Baku',
+        location: 'Azerbaijan',
+        grade: ' Cultural Relax',
+        fees: '$650',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius accusamus sunt, facilis vitae delectus veniam nobis'
+    },
+    {
+        id:'11',
+        imgSrc:img11,
+        destTitle: 'Moscow',
+        location: 'Russia',
+        grade: ' Cultural Relax',
+        fees: '$350',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius accusamus sunt, facilis vitae delectus veniam nobis'
+    },
+    {
+        id:'12',
+        imgSrc:img12,
+        destTitle: 'Tbilisi',
+        location: 'Georgia',
+        grade: ' Cultural Relax',
+        fees: '$300',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius accusamus sunt, facilis vitae delectus veniam nobis'
+    },
+
 ]

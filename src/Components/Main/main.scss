@@ -36,15 +36,18 @@
         }
 
         .secContent{
-            // display: flex;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 1.5rem;
-            
+
+        
             .singleDestination{
+                flex-wrap: wrap;
+                width: 335px;
                 height: 100%;
                 display: grid;
                 row-gap: 10px;
-                // padding: 1rem;
                 border-radius: 10px;
                 align-items: center;
                 background: var(--cardBG);
@@ -143,4 +146,6 @@
                 }
             }
         }
+     
     }
+  

@@ -15,7 +15,7 @@ const Main = () => {
           </h3>
       </div>
 
-      <div className="secContent grid">
+      <div className="secContent ">
           {/* here I will use high order array method(map) */}
          {
           travelData.map(({id,imgSrc,destTitle,grade,location,fees,description})=>{
