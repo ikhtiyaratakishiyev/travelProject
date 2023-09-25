@@ -70,7 +70,9 @@
           border-radius: 10px;
           gap: 1rem;
           width: 40%;
-          
+       
+      
+        
           label{
             display: block;
             color: var(--textColor);
@@ -98,7 +100,7 @@
                 background: none;
                 border: none;
                 outline: none;
-                width: 100%;
+                max-width: 50px;
                 font-size: 13px;
                 font-weight: 500;
                 &::placeholder{
@@ -142,7 +144,13 @@
 
             }
           }
+
+         
         }
+
+
+
+
 
         .homeFooterIcons{
           width: 100%;
