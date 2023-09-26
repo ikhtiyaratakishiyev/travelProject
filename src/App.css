@@ -86,3 +86,10 @@ body{
     background: var(--bodyColor);
 }
 
+
+@media screen and (max-width:1240px) {
+    .container{
+        width: 80% !important;
+    }
+}
+
