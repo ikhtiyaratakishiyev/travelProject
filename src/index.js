@@ -1,11 +1,45 @@
-import React from 'react';
+import React from "react";
+import  ReactDOM  from "react-dom";
+import { RouterProvider } from "react-router-dom";
+import {routes} from './Routes/router'
 
-import ReactDOM from 'react-dom/client';
 
-import App from './App';
+// const root = ReactDOM.createRoot(Document.getElementById('root'));
 
-const root =ReactDOM.createRoot(document.getElementById
+
+// root.render(
+
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+
+        <>
+                <RouterProvider router={routes}/>
+        </>
+    )
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+
+// import ReactDOM from 'react-dom/client';
+
+// import App from './App';
+
+// const root =ReactDOM.createRoot(document.getElementById
     
-    ('root'))
+//     ('root'))
 
-    root.render(<App/>)
+//     root.render(<App/>)

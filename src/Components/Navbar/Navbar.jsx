@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 import {MdOutlineTravelExplore} from "react-icons/md"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {TbGridDots} from "react-icons/tb"
@@ -25,10 +26,15 @@ const Navbar = () => {
       <header className='header flex'>
 
         <div className='logoDiv'>
-           <a href="logo" className='logo flex'>
+           {/* <a href="logo" className='logo flex'>
                 <h1><MdOutlineTravelExplore className="icon"/>  Travel</h1>
                 
-           </a>
+           </a> */}
+
+           <Link className='logo flex' to='/'>
+                <h1><MdOutlineTravelExplore className="icon"/>  Travel</h1>
+           </Link>
+
         </div>
 
 
@@ -37,11 +43,17 @@ const Navbar = () => {
 
            <ul className="navLists flex">
                 <li className='navItem'>
-                      <a href="#" className='navLink'>Home</a>
+                      {/* <a href="#" className='navLink'>Home</a> */}
+                      <Link  to='/'>
+                        <li className='navLink'>Home</li>
+                      </Link>
                 </li>
 
                 <li className='navItem'>
-                      <a href="#" className='navLink'>Packages</a>
+                      {/* <a href="#" className='navLink'>Packages</a> */}
+                        <Link  to='/packages'>
+                        <li className='navLink'>Packages</li>
+                      </Link>
                 </li>
 
                 <li className='navItem'>
