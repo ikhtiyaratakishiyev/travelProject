@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {MdOutlineTravelExplore} from "react-icons/md"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {TbGridDots} from "react-icons/tb"
+import { Link } from 'react-router-dom'
 
 
 import './navbar.scss'
@@ -25,10 +26,11 @@ const Navbar = () => {
       <header className='header flex'>
 
         <div className='logoDiv'>
-           <a href="logo" className='logo flex'>
+           {/* <a href="logo" className='logo flex'>
                 <h1><MdOutlineTravelExplore className="icon"/>  Travel</h1>
                 
-           </a>
+           </a> */}
+           <Link to="/" className='logo flex'   ><h1  className="icon"><MdOutlineTravelExplore /></h1> Travel</Link>
         </div>
 
 
@@ -37,27 +39,26 @@ const Navbar = () => {
 
            <ul className="navLists flex">
                 <li className='navItem'>
-                      <a href="#" className='navLink'>Home</a>
+                    
+                      <Link to="/" className='navLink'>Home</Link>
                 </li>
 
                 <li className='navItem'>
-                      <a href="#" className='navLink'>Packages</a>
+                     
+                      <Link to="/packages" className='navLink'>Packages</Link>
                 </li>
 
                 <li className='navItem'>
-                      <a href="#" className='navLink'>About</a>
+                     
+                      <Link to="/about" className='navLink'>About</Link>
                 </li>
 
                 <li className='navItem'>
-                      <a href="#" className='navLink'>Pages</a>
+                <Link to="/news" className='navLink'>News</Link>
                 </li>
 
                 <li className='navItem'>
-                      <a href="#" className='navLink'>News</a>
-                </li>
-
-                <li className='navItem'>
-                      <a href="#" className='navLink'>Contact</a>
+                <Link to="/contact" className='navLink'>Contacts</Link>
                 </li>
 
                 <button className='btn'>
