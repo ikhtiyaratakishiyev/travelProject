@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 import {MdOutlineTravelExplore} from "react-icons/md"
 import {AiFillCloseCircle} from "react-icons/ai"
 import {TbGridDots} from "react-icons/tb"
@@ -30,7 +31,15 @@ const Navbar = () => {
                 <h1><MdOutlineTravelExplore className="icon"/>  Travel</h1>
                 
            </a> */}
+<<<<<<< HEAD
            <Link to="/" className='logo flex'   ><h1  className="icon"><MdOutlineTravelExplore /></h1> Travel</Link>
+=======
+
+           <Link className='logo flex' to='/'>
+                <h1><MdOutlineTravelExplore className="icon"/>  Travel</h1>
+           </Link>
+
+>>>>>>> 99857844d59d103ca35f2d6bbacb0d5a8057f11f
         </div>
 
 
@@ -39,6 +48,7 @@ const Navbar = () => {
 
            <ul className="navLists flex">
                 <li className='navItem'>
+<<<<<<< HEAD
                     
                       <Link to="/" className='navLink'>Home</Link>
                 </li>
@@ -46,6 +56,19 @@ const Navbar = () => {
                 <li className='navItem'>
                      
                       <Link to="/packages" className='navLink'>Packages</Link>
+=======
+                      {/* <a href="#" className='navLink'>Home</a> */}
+                      <Link  to='/'>
+                        <li className='navLink'>Home</li>
+                      </Link>
+                </li>
+
+                <li className='navItem'>
+                      {/* <a href="#" className='navLink'>Packages</a> */}
+                        <Link  to='/packages'>
+                        <li className='navLink'>Packages</li>
+                      </Link>
+>>>>>>> 99857844d59d103ca35f2d6bbacb0d5a8057f11f
                 </li>
 
                 <li className='navItem'>
