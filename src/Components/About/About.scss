@@ -1,0 +1,84 @@
+:root{
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201,33%,16%);
+    --textColor: hsl(240,4%,36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190, 190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor: rgb(240,240,246);
+    --cardBG: rgb(225,225,235);
+    }
+
+   .About{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+
+
+       video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+       }
+       .aboutContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        padding: 8rem 1.5rem 3rem;
+        gap: 5rem;
+        justify-content: center;
+        margin: auto;
+        color: var(--whiteColor);
+        z-index: 100;
+        
+
+        .carddiv__img{
+          position: relative;
+          padding: 2rem 1rem;
+        //   background: var(--whiteColor);
+        background-image: url(../../Assets/Images/about.jpg);
+          border-radius: 10px;
+          gap: 1rem;
+          width: 40%;
+          height: 90%;
+
+        }
+        .carddiv__title{
+            position: relative;
+            padding: 2rem 1rem;
+            background: var(--whiteColor);
+            border-radius: 10px;
+            gap: 1rem;
+            width: 40%;
+            height: 90%;
+            .aboutTitle{
+                position: relative;
+                font-size: 1rem;
+                color: var(--blackColor);
+                align-items: center;
+                justify-content: center;
+            }
+        }
+          }
+
+
+          @media screen and (max-width:961px){
+            .aboutContent{
+                display: flex;
+                flex-direction: column;
+            }
+          }
+
+       }
+   
