@@ -7,6 +7,7 @@ import AboutPage from '../Pages/AboutPage'
 import ContactPage from '../Pages/ContactPage'
 import NewsPage from '../Pages/NewsPage'
 import PackagesPage from '../Pages/PackagesPage'
+import ProductsPage from '../Pages/productsPage';
 
 
 
@@ -51,4 +52,10 @@ export const routes = createBrowserRouter([
         element:<NewsPage/>
 
     },
+    {
+        path:"/productsPage",
+        element:<ProductsPage/>
+
+    }
+
 ])

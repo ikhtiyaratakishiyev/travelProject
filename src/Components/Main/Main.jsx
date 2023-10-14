@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
-
+import { useNavigate } from 'react-router-dom'
+import { productData } from '../../Data/index'
 import {travelData} from '../../Data/index'
 import {HiOutlineClipboardCheck, HiOutlineLocationMarker} from 'react-icons/hi'
 import Aos from 'aos'
@@ -16,6 +17,17 @@ const Main = () => {
   useEffect(()=>{
    Aos.init({duration:2000})
  },[])
+
+ const navigate = useNavigate()
+
+ const clickHandle= async(item)=>{
+
+   const travelProducts= localStorage.setItem('productId',"item.id")
+
+   navigate('/productsPage')
+ }
+
+
   return (
    <section className='main container section'>
       <div className="secTitle">
@@ -55,7 +67,7 @@ const Main = () => {
                         <p>{description}</p> 
                      </div>
 
-                     <button className='btn flex'>
+                     <button onClick={()=>clickHandle()}   className='btn flex'>
                          DETAILS <HiOutlineClipboardCheck className='icon'/>
                      </button>
                   </div>
