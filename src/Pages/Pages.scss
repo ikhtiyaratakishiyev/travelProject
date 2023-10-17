@@ -15,7 +15,7 @@
     .productsPage__container{
         display: flex;
         padding: 2rem;
-        border: 1px solid red;
+        
        
         align-items: center;
         justify-content: space-between;
@@ -25,5 +25,12 @@
         }
         .productsPage__title{
             max-width: 45%;
+            padding: 2rem;
+            align-items: center;
+            justify-content: center;
+            p{
+                color: var(--PrimaryColor);
+                padding-top: 3rem;
+            }
         }
     }

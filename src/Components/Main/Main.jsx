@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { productData } from '../../Data/index'
 import {travelData} from '../../Data/index'
 import {HiOutlineClipboardCheck, HiOutlineLocationMarker} from 'react-icons/hi'
 import Aos from 'aos'
@@ -22,7 +21,7 @@ const Main = () => {
 
  const clickHandle= async(item)=>{
 
-   const travelProducts= localStorage.setItem('productId',"item.id")
+   const x = localStorage.setItem ('productId', item.id)
 
    navigate('/productsPage')
  }
