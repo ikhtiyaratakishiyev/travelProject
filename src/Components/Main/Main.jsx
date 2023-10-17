@@ -36,18 +36,18 @@ const Main = () => {
           </h3>
       </div>
 
-      <div className="secContent ">
+      <div onClick={()=>clickHandle()} className="secContent ">
           {/* here I will use high order array method(map) */}
          {
           travelData.map(({id,imgSrc,destTitle,grade,location,fees,description})=>{
              return(
 
               <div key={id} data-aos="fade-up" className="singleDestination">
-                  <div className="imageDiv">
+                  <div  className="imageDiv">
                       <img src={imgSrc} alt={destTitle} />
                   </div>
 
-                  <div className="cardInfo">
+                  <div   className="cardInfo">
                      <h4 className="destTitle">{destTitle}</h4>
                      <span className="content flex">
                         <span className="name">{location}</span>
@@ -67,7 +67,7 @@ const Main = () => {
                         <p>{description}</p> 
                      </div>
 
-                     <button onClick={()=>clickHandle()}   className='btn flex'>
+                     <button   className='btn flex'>
                          DETAILS <HiOutlineClipboardCheck className='icon'/>
                      </button>
                   </div>
@@ -76,6 +76,8 @@ const Main = () => {
           })
          }
       </div>
+
+      
    </section>
 
   )

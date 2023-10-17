@@ -14,36 +14,47 @@ import img12 from '../Assets/Images/img12.jpg'
 import img1_1 from '../Assets/productsImage/p1/img1_1.jpg'
 import img1_2 from '../Assets/productsImage/p1/img1_2.jpg'
 import img1_3 from '../Assets/productsImage/p1/img1_3.jpg'
+
 import img2_1 from '../Assets/productsImage/p2/img2_1.jpg'
 import img2_2 from '../Assets/productsImage/p2/img2_2.jpg'
 import img2_3 from '../Assets/productsImage/p2/img2_3.jpg'
+
 import img3_1 from '../Assets/productsImage/p3/img3_1.jpg'
 import img3_2 from '../Assets/productsImage/p3/img3_2.jpg'
 import img3_3 from '../Assets/productsImage/p3/img3_3.jpg'
+
 import img4_1 from '../Assets/productsImage/p4/img4_1.jpg'
 import img4_2 from '../Assets/productsImage/p4/img4_2.jpg'
 import img4_3 from '../Assets/productsImage/p4/img4_3.jpg'
+
 import img5_1 from '../Assets/productsImage/p5/img5_1.jpg'
 import img5_2 from '../Assets/productsImage/p5/img5_2.jpg'
 import img5_3 from '../Assets/productsImage/p5/img5_3.jpg'
+
 import img6_1 from '../Assets/productsImage/p6/img6_1.jpg'
 import img6_2 from '../Assets/productsImage/p6/img6_2.jpg'
 import img6_3 from '../Assets/productsImage/p6/img6_3.jpg'
+
 import img7_1 from '../Assets/productsImage/p7/img7_1.jpg'
 import img7_2 from '../Assets/productsImage/p7/img7_2.jpg'
 import img7_3 from '../Assets/productsImage/p7/img7_3.jpg'
+
 import img8_1 from '../Assets/productsImage/p8/img8_1.jpg'
 import img8_2 from '../Assets/productsImage/p8/img8_2.jpg'
 import img8_3 from '../Assets/productsImage/p8/img8_3.jpg'
+
 import img9_1 from '../Assets/productsImage/p9/img9_1.jpg'
 import img9_2 from '../Assets/productsImage/p9/img9_2.jpg'
 import img9_3 from '../Assets/productsImage/p9/img9_3.jpg'
+
 import img10_1 from '../Assets/productsImage/p10/img10_1.jpg'
 import img10_2 from '../Assets/productsImage/p10/img10_2.jpg'
 import img10_3 from '../Assets/productsImage/p10/img10_3.jpg'
+
 import img11_1 from '../Assets/productsImage/p11/img11_1.jpg'
 import img11_2 from '../Assets/productsImage/p11/img11_2.jpg'
 import img11_3 from '../Assets/productsImage/p11/img11_3.jpg'
+
 import img12_1 from '../Assets/productsImage/p12/img12_1.jpg'
 import img12_2 from '../Assets/productsImage/p12/img12_2.jpg'
 import img12_3 from '../Assets/productsImage/p12/img12_3.jpg'

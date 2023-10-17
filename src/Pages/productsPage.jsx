@@ -2,9 +2,12 @@ import React,{useState,useEffect} from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import { productData } from '../Data/index'
 
+
+
+import "./Pages.scss"
 const ProductsPage = () => {
 
-    const [currentProduct, setCurrentProduct] = useState({})
+    // const [currentProduct, setCurrentProduct] = useState({})
 
     // const getData = async()=>{
     //     const productId = await localStorage.getItem('productId')
@@ -20,33 +23,29 @@ const ProductsPage = () => {
   return (
     <div>
         <Navbar/>
-       <div className="productsPage__container">
-       {
-                productData.map((item)=>{
-                   return(
-                    <div className="productsPage__img">
-        
-                    <img src={item.img1_1} alt="" />
-                 
-                            
-                </div>
-                   ) 
-                })
-            }
-       
 
-         <div className="productsPage__title-container">
-           <div className="productsPage__txt">
-             <h2>About tour</h2>
-             
-                {/* {productData.map((item)=>{
-                    return(
-                      <p>{item.description}</p>
-                    )
-                })} */}
-             
-           </div>
+       <div className="productsPage__container">
+      
+        <div className="productsPage__img">
+           {
+            productData.map((item)=>{
+              return(
+                <img src={item.img1} alt="" />
+              )
+            })
+           }
+        </div>
+
+         <div className="productsPage__title">
+         {
+            productData.map((item)=>{
+              return(
+                <h2>{item.description}</h2>
+              )
+            })
+           }         
          </div>
+
        </div>
     </div>
   )
