@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
-import {travelData} from '../../Data/index'
+import {productData} from '../../Data/index'
 import {HiOutlineClipboardCheck, HiOutlineLocationMarker} from 'react-icons/hi'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -19,14 +19,20 @@ const Main = () => {
 
  const navigate = useNavigate()
 
- const clickHandle= async(item)=>{
+ const clickHandle= async(id)=>{
 
-   const x = localStorage.setItem ('productId', item.id)
+   const x = localStorage.setItem ('productId', id)
 
    navigate('/productsPage')
  }
 
-
+ function limitDescription(description) {
+   if (description.length > 150) {
+       return description.substring(0, 150) + "...";
+   } else {
+       return description;
+   }
+}
   return (
    <section className='main container section'>
       <div className="secTitle">
@@ -35,15 +41,15 @@ const Main = () => {
           </h3>
       </div>
 
-      <div onClick={()=>clickHandle()} className="secContent ">
+      <div  className="secContent ">
           {/* here I will use high order array method(map) */}
          {
-          travelData.map(({id,imgSrc,destTitle,grade,location,fees,description})=>{
+          productData.map(({id,img1,destTitle,grade,location,fees,description})=>{
              return(
 
-              <div key={id} data-aos="fade-up" className="singleDestination">
+              <div onClick={()=>clickHandle(id)} key={id} data-aos="fade-up" className="singleDestination">
                   <div  className="imageDiv">
-                      <img src={imgSrc} alt={destTitle} />
+                      <img src={img1} alt={destTitle} />
                   </div>
 
                   <div   className="cardInfo">
@@ -63,7 +69,7 @@ const Main = () => {
                      </div>
 
                      <div className="desc">
-                        <p>{description}</p> 
+                        <p>{limitDescription(description)}</p> 
                      </div>
 
                      <button   className='btn flex'>

@@ -2,11 +2,11 @@
 import React from 'react'
 import { createBrowserRouter } from "react-router-dom";
 
-import HomePage from '../Pages/HomePage'
-import AboutPage from '../Pages/AboutPage'
-import ContactPage from '../Pages/ContactPage'
-import NewsPage from '../Pages/NewsPage'
-import PackagesPage from '../Pages/PackagesPage'
+import HomePage from '../Pages/homePage'
+import AboutPage from '../Pages/aboutPage'
+import ContactPage from '../Pages/contactPage'
+import NewsPage from '../Pages/newsPage'
+import PackagesPage from '../Pages/packagesPage'
 import ProductsPage from '../Pages/productsPage';
 
 
