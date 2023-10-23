@@ -23,7 +23,7 @@ const Main = () => {
 
    const x = localStorage.setItem ('productId', id)
 
-   navigate('/productsPage')
+   navigate('/productPage')
  }
 
  function limitDescription(description) {
