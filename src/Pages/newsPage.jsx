@@ -5,7 +5,10 @@ const NewsPage = () => {
   return (
     <div>
       <Navbar/>
-        <h1>NewsPage</h1>
+      <div className="travelProject__newsPage-container">
+      <h1>NewsPage</h1>
+      </div>
+        
     </div>
   )
 }

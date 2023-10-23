@@ -4,7 +4,11 @@ const PackagesPage = () => {
   return (
     <div>
       <Navbar/>
-        <h1>PackagesPage</h1>
+
+      <div className="travelProject__packages-container">
+      <h1>PackagesPage</h1>
+      </div>
+      
     </div>
   )
 }

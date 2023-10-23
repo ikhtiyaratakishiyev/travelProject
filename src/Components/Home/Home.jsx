@@ -80,9 +80,10 @@ const Home = () => {
 
          <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcon">
-          <FiFacebook className='icon'/>
-          <AiOutlineInstagram className='icon'/>
-          <SiTripadvisor className='icon'/>
+            <a target="blank" href="https://www.facebook.com"><FiFacebook className='icon'/></a>
+            <a target="blank" href="https://www.instagram.com"> <AiOutlineInstagram className='icon'/></a>
+             <a target="blank" href="https://www.tripadvisor.com/"> <SiTripadvisor className='icon'/></a>
+         
           </div>
           <div className="leftIcon">
           <BsListTask className='icon'/>

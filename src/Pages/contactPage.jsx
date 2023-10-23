@@ -4,7 +4,11 @@ const ContactPage = () => {
   return (
     <div>
       <Navbar/>
-        <h1>ContactPage</h1>
+
+      <div className="travelProject__contactPage-container">
+      <h1>ContactPage</h1>
+      </div>
+        
     </div>
   )
 }
