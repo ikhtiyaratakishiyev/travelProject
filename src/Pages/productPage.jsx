@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 import { productData } from '../Data/index'
-
+import {Link} from 'react-router-dom'
 
 
 import "./Pages.scss"
@@ -40,7 +40,10 @@ const ProductPage = (id) => {
            <div className="productPage__text">
                  <p>{currentProduct.description}</p>
                  <div className="productPage__btn">
-                 <button>Buy Now</button>
+                  <Link to='/purchasingPage'>
+                  <button>Buy Now</button>
+                  </Link>
+                 
            </div>
 
            </div>

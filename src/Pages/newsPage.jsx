@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 
+import './Pages.scss'
+
 const NewsPage = () => {
   return (
     <div>

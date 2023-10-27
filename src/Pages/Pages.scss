@@ -81,6 +81,84 @@
     }
 
 
+    .travelProject__purchasing-container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 100vh;
+
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(47,106,127);
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            mix-blend-mode: hard-light;
+        }
+       video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+       }
+       .travelProject__purchasing-input-wrapper{
+        position: relative;
+        padding: 2rem 1rem;
+        background: var(--whiteColor);
+        border-radius: 10px;
+        gap: 1rem;
+       width: 70%;
+       label{
+        display: block;
+        color: var(--textColor);
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+       }
+       .travelProject__btn{
+        
+        Button{
+            width: 10rem;
+            height: 2rem;
+            background: var(--PrimaryColor);
+            color: var(--whiteColor);
+            border-radius: 5px;
+            align-items: center;
+            margin: 3rem ;
+            justify-content: center;
+            cursor: pointer;
+           }
+       }
+      
+        .input{
+        height: 44px;
+        padding: 0 1rem;
+        background: var(--inputColor);
+        border-radius: 3px;
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            max-width: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            &::placeholder{
+                font-size: 13px;
+            }
+        }
+        }
+        
+       }
+    }
+
+
     @media screen and (max-width:1400px){
 
     .productPage__container{
