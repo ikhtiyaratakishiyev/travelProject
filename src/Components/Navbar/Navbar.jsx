@@ -64,10 +64,6 @@ const Navbar = () => {
                 </li>
 
                 <li className='navItem'>
-                <Link to="/news" className='navLink'>News</Link>
-                </li>
-
-                <li className='navItem'>
                 <Link to="/contact" className='navLink'>Contacts</Link>
                 </li>
 

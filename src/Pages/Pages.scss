@@ -69,9 +69,57 @@
     }
 
     .travelProject__packages-container{
-        h1{
-            padding-top: 10rem;
+      padding-top: 6rem;   
+    
+     .travelProject__packages-smalltext{
+       h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--textColor);
+
+       }
+     }
+
+     .travelProject__packages-cards{
+        border-radius: 5px;
+        margin: auto;
+        width: 80%;
+        height: 450px;
+        background: #d6c5b4;
+        .travelProject__packages-info{
+            display: flex;
+            flex-direction: row;
+           .travelProject__packages-imgSide{
+            .travelProject__packages-imgSide-img{
+                padding-top: 1rem;
+                width: 300px;
+                height: 100vh;
+                margin: 0 1rem;
+            }
+           
+            .travelProject__packages-imgSide_type{
+                background: var(--whiteColor);
+                h2{
+                    color: var(--textColor);
+                    font-weight: normal;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+           } 
         }
+        .travelPfroject__packages-title{
+         border-bottom: dashed 2px red;
+         margin: 0 1rem;
+         h3{
+            display: flex;
+            color: var(--PrimaryColor);
+            padding: 1rem;
+         }
+        }
+     }
+    
     }
 
     .travelProject__contactPage-container{
@@ -94,7 +142,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            background: rgb(47,106,127);
+            // background: rgb(47,106,127);
             top: 0;
             bottom: 0;
             z-index: 1;

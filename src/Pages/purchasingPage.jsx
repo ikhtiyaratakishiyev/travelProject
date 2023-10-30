@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import Navbar from '../Components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
 import video3 from '../Assets/Videos/video3.mp4'
 import './Pages.scss'
 import Aos from 'aos'
@@ -58,6 +59,8 @@ const PurchasingPage = () => {
            
           </div>
     </div>
+
+    <Footer/>
         
     </>
   )

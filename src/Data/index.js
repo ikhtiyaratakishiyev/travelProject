@@ -46,6 +46,8 @@ import img12_1 from '../Assets/productsImage/p12/img12_1.jpg'
 import img12_2 from '../Assets/productsImage/p12/img12_2.jpg'
 import img12_3 from '../Assets/productsImage/p12/img12_3.jpg'
 
+import packimg1 from '../Assets/Images/packimg1.jpg'
+
 
 
 export const productData =[
@@ -181,4 +183,19 @@ export const productData =[
         fees: '$300',
         description: 'Tbilisi in some languages still known by its pre-1936 name Tiflis is the capital and the largest city of Georgia, lying on the banks of the Kura River with a population of around 1.2 million people. Tbilisi was founded in the fifth century AD by Vakhtang I of Iberia, and since then has served as the capital of various Georgian kingdoms and republics. Between 1801 and 1917, then part of the Russian Empire, Tiflis was the seat of the Caucasus Viceroyalty, governing both the northern and the southern parts of the Caucasu.Because of its location at the crossroads between Europe and Asia, and its proximity to the lucrative Silk Road, throughout history, Tbilisi was a point of contention among various global powers. To this day the city`s location ensures its position as an important transit route for energy and trade projects. Tbilisi`s history is reflected in its architecture, which is a mix of medieval, neoclassical, Beaux Arts, Art Nouveau, Stalinist, and Modern structures.Historically, Tbilisi has been home to people of multiple cultural, ethnic, and religious backgrounds, though it is overwhelmingly Eastern Orthodox Christian. Its notable tourist destinations include cathedrals Sameba and Sioni, Freedom Square, Rustaveli Avenue and Agmashenebeli Avenue, medieval Narikala Fortress, the pseudo-Moorish Opera Theater, and the Georgian National Museum. The climate in Tbilisi mostly ranges from 20 to 32 °C (68 to 90 °F) in the summer and −1 to 7 °C (30 to 45 °F) in the winter.'
     },
+]
+
+
+export const Packages =[
+    {
+        id: 1,
+        img: packimg1,
+        price: 599,
+        name: "Bora-Bora",
+        description: 'This special 2 hours tour to Nizami street and Old City part of Baku is especially designed for tourists and visitors who are interested in history and lifestyle of locals in Azerbaijan.',
+        title:'Essential Baku Highlights Walking Tour',
+        type: 'Walking Tour'
+
+    }
+ 
 ]
