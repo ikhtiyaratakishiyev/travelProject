@@ -22,32 +22,22 @@ const PackagesPage = () => {
            {
                   Packages.map(({id,img,price,name,description,title,type})=>{
                    return(
-                    <div className="travelProject__packages-info flex">
-
-                     <div className="travelProject__packages-imgSide">
-                      
-                      <div className="travelProject__packages-imgSide_img">
-                      <img src={img} alt="" />
+                    <div className="travelProject__packages-info ">
+                                   
+                      <div className="travelProject__packages-img">
+                          <img src={img} alt="" />
                       </div>
 
-                     <div className="travelProject__packages-imgSide_type">
-                       <h3>{type}</h3>
+                      <div className="travelProject__packages-description">
+                           <h2>{title}</h2>
+                           <p>{description}</p>
                       </div>
-
-
-
+               
+                      <div className="travelProject__packages-price">
+                         from
+                         <p> {price}</p>
+                            <FaAccessibleIcon className='icon'/>
                      </div>
-
-                    <div className="travelProject__packages-description">
-                       <h2>{title}</h2>
-                       <p>{description}</p>
-                   </div>
-
-                   <div className="travelProject__packages-price">
-                     from
-                     <p> {price}</p>
-                     <FaAccessibleIcon className='icon'/>
-                   </div>
 
            </div>
                    )

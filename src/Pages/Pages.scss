@@ -82,32 +82,29 @@
      }
 
      .travelProject__packages-cards{
+        
         border-radius: 5px;
         margin: auto;
         width: 80%;
         height: 450px;
         background: #d6c5b4;
+       
         .travelProject__packages-info{
             display: flex;
-            flex-direction: row;
-           .travelProject__packages-imgSide{
-            .travelProject__packages-imgSide-img{
+         
+           
+            .travelProject__packages-img{
                 padding-top: 1rem;
-                width: 300px;
+                max-width: 300px;
                 height: 100vh;
                 margin: 0 1rem;
             }
-           
-            .travelProject__packages-imgSide_type{
-                background: var(--whiteColor);
-                h2{
-                    color: var(--textColor);
-                    font-weight: normal;
-                    display: flex;
-                    justify-content: center;
-                }
+            .travelProject__packages-description{
+               
             }
-           } 
+           
+           
+           
         }
         .travelPfroject__packages-title{
          border-bottom: dashed 2px red;
