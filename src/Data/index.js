@@ -47,6 +47,10 @@ import img12_2 from '../Assets/productsImage/p12/img12_2.jpg'
 import img12_3 from '../Assets/productsImage/p12/img12_3.jpg'
 
 import packimg1 from '../Assets/Images/packimg1.jpg'
+import Madrid from '../Assets/Images/madrid.jpeg'
+import Rome from '../Assets/Images/Rome.webp'
+import Paris from '../Assets/Images/Paris.webp'
+import Zurikh from '../Assets/Images/Zurikh.webp'
 
 
 
@@ -190,11 +194,51 @@ export const Packages =[
     {
         id: 1,
         img: packimg1,
-        price: 599,
+        price: 19.99,
         name: "Bora-Bora",
         description: 'This special 2 hours tour to Nizami street and Old City part of Baku is especially designed for tourists and visitors who are interested in history and lifestyle of locals in Azerbaijan.',
         title:'Essential Baku Highlights Walking Tour',
-        type: 'Walking Tour'
+      
+
+    },
+    {
+        id: 2,
+        img: Madrid,
+        price: 39.99,
+        name: "Madrid ",
+        description: 'Indulge in an exquisite culinary journey set in the charming ambiance of a historic building in the heart of Madrid. In just 45 minutes, savor the finest prime cuts of Jamón Ibérico, along with flavorful chorizo sausage, lomo and salchichón.Read more about Jamón Ibérico & Fine Meats Gourmet Tasting with Wine in Madrid',
+        title:'Jamón Ibérico & Fine Meats Gourmet Tasting with Wine in Madrid',
+        
+
+    },
+    {
+        id: 3,
+        img: Rome,
+        price: 699.99,
+        name: "Rome",
+        description: 'When it comes to a dreamy Italian getaway, few destinations can match the allure of Rome, Florence, and Venice. These three cities have abundant history, culture, and beauty, making them an ideal trio for a vacation of a lifetime. So pack your',
+        title:'Rome Florence Venice 5 Nights 6 Days Tour Package',
+        
+
+    },
+    {
+        id: 4,
+        img: Paris,
+        price: 499.99,
+        name: "Paris",
+        description: 'Paris is a magical city, captivating visitors with its stunning architecture, romantic atmosphere, and endless attractions. From the iconic Eiffel Tower to the beautiful Seine River, it is a city that will fill your heart with joy and your eyes with wonder.',
+        title:'3 Nights 4 Days Hotel Opera Lafayette Paris Tour Package',
+        
+
+    },
+    {
+        id: 5,
+        img: Zurikh,
+        price: 999.99,
+        name: "Zurich ",
+        description: 'Zurich is a beautiful city located on the banks of the Limmat River in north-central Switzerland and is famous for its shopping scene. From luxury brands to charming local stores, Zurich has something for everyone. Geneva is a city located at the',
+        title:'Zurich And Geneva 4 Nights 5 Days Tour Package',
+       
 
     }
  

@@ -6,6 +6,7 @@ import {TbGridDots} from "react-icons/tb"
 
 
 
+
 import './navbar.scss'
 
 const Navbar = () => {
@@ -67,9 +68,13 @@ const Navbar = () => {
                 <Link to="/contact" className='navLink'>Contacts</Link>
                 </li>
 
-                <button className='btn'>
-                    <a href="#">Book Now</a>
-                </button>
+                <li className='navItem' >
+                  <Link to='/packages'><button className='btn'>Book Now</button></Link>
+                </li>
+
+                
+                    {/* <a href="#">Book Now</a> */}
+                  
            </ul>
 
            <div onClick={removeNavbar}  className="closeNavBar">
