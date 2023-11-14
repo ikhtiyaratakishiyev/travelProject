@@ -12,14 +12,20 @@ const PackagesPage = () => {
   return (
     <>
       <Navbar/>
-  
+     <div className="travelProject__packages-container">
+    
+
+         {/* <div className='travelProject__packages-smalltext'>
+            <h3 className='text'>OUR BEST TOURS</h3>
+         </div> */}
+           
            {
                   Packages.map(({id,img,price,name,description,title,type})=>{
                    return(
              
-                    <section className="travelProject__packages-container">
+                    <section className='travelProject__packages-card'>
                                    
-                                   <div data-aos="fade-up" className="travelProject__packages-img">
+                                   <div className="travelProject__packages-img">
                                        <img src={img} alt="" />
                                    </div>
                                    <div data-aos="fade-up" className="travelProject__packages-info ">
@@ -43,7 +49,17 @@ const PackagesPage = () => {
              
                                    </div>
 
-                                 
+                                   {/* <div className="travelProject__packages-rate">
+                                    <ul>
+                                      <li>{name}</li>
+                                      <li className='icon'><AiTwotoneStar/></li>
+                                      <li className='icon'><AiTwotoneStar/></li>
+                                      <li className='icon'><AiTwotoneStar/></li>
+                                      <li className='icon'><AiTwotoneStar/></li>
+                                      <li className='icon'><BiSolidStarHalf/></li>
+                                      <li>{type}</li>
+                                    </ul>
+                                   </div> */}
                     </section>
                      
 
@@ -52,7 +68,11 @@ const PackagesPage = () => {
                    )
                   })
                 }
-   
+          
+
+     
+      
+    </div>
     </>
    
   )
