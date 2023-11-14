@@ -12,23 +12,17 @@ const PackagesPage = () => {
   return (
     <>
       <Navbar/>
-     <div className="travelProject__packages-container">
-    
-
-         {/* <div className='travelProject__packages-smalltext'>
-            <h3 className='text'>OUR BEST TOURS</h3>
-         </div> */}
-           
+  
            {
                   Packages.map(({id,img,price,name,description,title,type})=>{
                    return(
              
-                    <>
-                                   <div data-aos="fade-up" className="travelProject__packages-info ">
+                    <section className="travelProject__packages-container">
                                    
-                                   <div className="travelProject__packages-img">
+                                   <div data-aos="fade-up" className="travelProject__packages-img">
                                        <img src={img} alt="" />
                                    </div>
+                                   <div data-aos="fade-up" className="travelProject__packages-info ">
              
                                    <div className="travelProject__packages-description">
                                         <h2>{title}</h2>
@@ -49,18 +43,8 @@ const PackagesPage = () => {
              
                                    </div>
 
-                                   {/* <div className="travelProject__packages-rate">
-                                    <ul>
-                                      <li>{name}</li>
-                                      <li className='icon'><AiTwotoneStar/></li>
-                                      <li className='icon'><AiTwotoneStar/></li>
-                                      <li className='icon'><AiTwotoneStar/></li>
-                                      <li className='icon'><AiTwotoneStar/></li>
-                                      <li className='icon'><BiSolidStarHalf/></li>
-                                      <li>{type}</li>
-                                    </ul>
-                                   </div> */}
-                    </>
+                                 
+                    </section>
                      
 
                      
@@ -68,11 +52,7 @@ const PackagesPage = () => {
                    )
                   })
                 }
-          
-
-     
-      
-    </div>
+   
     </>
    
   )
