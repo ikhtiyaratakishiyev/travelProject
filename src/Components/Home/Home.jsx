@@ -13,6 +13,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import "./home.scss";
 
+
 const Home = () => {
 
   // lets create a react hook to add a scroll animation.
@@ -91,8 +92,9 @@ const Home = () => {
           </div>
          </div>
       </div>
-         
+       
     </section>
+    
   );
 };
 

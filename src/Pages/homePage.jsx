@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Home from '../Components/Home/Home'
-import Main from '../Components/Main/Main'
+import CoruselComponent from '../Components/Corusel/corusel'
 import Footer from '../Components/Footer/Footer'
+
 
  
 const HomePage = () => {
@@ -10,7 +11,7 @@ const HomePage = () => {
     <div>
         <Navbar/>
         <Home/>
-        <Main/>
+       <CoruselComponent/>
         <Footer/>
     </div>
   )
