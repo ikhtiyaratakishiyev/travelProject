@@ -35,14 +35,14 @@ const Home = () => {
       </video>
 
       <div className="homeContent container">
-         <div className="textDiv">
+         {/* <div className="textDiv">
            <span data-aos="fade-up" className="smallText">
             Our Packages
            </span>
            <h1 data-aos="fade-up" className="homeTitle">
             Search your Holiday
            </h1>
-         </div>
+         </div> */}
 
          <div data-aos="fade-up" className="carddiv grid">
 
