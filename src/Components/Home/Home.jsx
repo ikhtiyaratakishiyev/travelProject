@@ -1,6 +1,5 @@
 import React,{useEffect} from "react";
 import {GrLocation} from 'react-icons/gr'
-import {HiFilter} from 'react-icons/hi'
 import {FiFacebook} from 'react-icons/fi'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {SiTripadvisor} from 'react-icons/si'
@@ -35,14 +34,14 @@ const Home = () => {
       </video>
 
       <div className="homeContent container">
-         {/* <div className="textDiv">
+         <div className="textDiv">
            <span data-aos="fade-up" className="smallText">
             Our Packages
            </span>
            <h1 data-aos="fade-up" className="homeTitle">
             Search your Holiday
            </h1>
-         </div> */}
+         </div>
 
          <div data-aos="fade-up" className="carddiv grid">
 
@@ -72,11 +71,7 @@ const Home = () => {
               </div>
           </div>
            
-          <div className="searchOptions flex">
-            <HiFilter className="icon"/>
-            <span>MORE FILTERS</span>
-          </div>
-
+        
          </div>
 
          <div data-aos="fade-up" className="homeFooterIcons flex">

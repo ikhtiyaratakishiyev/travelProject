@@ -13,10 +13,23 @@ const Navbar = () => {
 
       const [active, setActive] =useState('navBar')
 
+
+      const [divVisible,setDivVisible] = useState(false);
+
+      
+
+      const handleMenuClick = () =>{
+            setDivVisible(!divVisible)
+      }
       // Function to toggle navbar
 
       const showNav = ()=>{
             setActive('navBar activeNavBar')
+      }
+
+      const twiceFunction =()=>{
+            handleMenuClick();
+            showNav()
       }
 
 // Function to remove navBar
@@ -82,7 +95,7 @@ const Navbar = () => {
            </div>
         </div>
         
-        <div onClick={showNav} className="toggleNavbar ">
+        <div  onClick={twiceFunction} className="toggleNavbar ">
             <TbGridDots className='icon'/>
         </div>
       </header>
