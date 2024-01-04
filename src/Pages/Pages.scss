@@ -109,12 +109,12 @@
            .contactText{
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
-           padding: 1rem 5rem 0 5rem;
+            margin: auto;
            flex-wrap: wrap;
             .contactAdres,
             .contactSocial{
-              
+              cursor: pointer;
+           
               h5{
                 color: var(--blackColor);
               }
@@ -123,12 +123,8 @@
               }
               li{
                 color: var(--blackColor);
-                cursor: pointer;
-                gap: 2rem;
-                icon{
-                  font-size: 18px;
-                  padding: 3rem;
-                }
+               
+             
                 &:hover{
                   color: var(--PrimaryColor);
                   font-size: 17px;
@@ -365,7 +361,7 @@
             }
                 }
 
-                @media screen and (max-width:1100px){
+@media screen and (max-width:1100px){
 
                     .productPage__container{
                         display: flex;
@@ -384,3 +380,24 @@
                         }
                     }
                         }
+
+ @media screen and (max-width:940px){
+.contactText{
+  gap: 2rem;
+}
+                   
+ }
+
+ @media screen and (max-width:770px){
+  .contactText{
+   
+    margin: auto;
+    padding: auto;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  .icon{
+   font-size: 10px
+  }
+                     
+   }

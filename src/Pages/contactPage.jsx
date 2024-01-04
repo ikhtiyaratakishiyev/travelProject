@@ -30,18 +30,23 @@ const ContactPage = () => {
            {/* <Location location={location}/> */}
        </div>
       <div className="contactText">
+
         <div className="contactAdres">
          <h5>Adres</h5>
          <p>Tbilisi 5, <br />Baku,Azerbaijan</p>
         </div>
+
        <div className="contactSocial">
          <ul>
           <li><h5>Social Media</h5></li>
-          <li><ImFacebook2 />FaceBook</li>
-          <li><BsLinkedin />Linkedin</li>
-          <li><FaInstagram />Instagram</li>
-          <li><FaTiktok />TikTok</li>
-          <li><FaTwitterSquare />Twitter</li>
+          
+             <li><a target="blank" href="https://www.facebook.com">FaceBook</a></li>
+             <li><a target="blank" href="https://www.tiktok.com">TikTok</a></li>
+          <li> <a target="blank" href="https://www.instagram.com"> Instagram</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/"> Linkedin</a></li>
+          <li><a target="blank" href="https://www.twitter.com/"> Twitter</a></li>
+        
+         
          </ul>
          
        </div>

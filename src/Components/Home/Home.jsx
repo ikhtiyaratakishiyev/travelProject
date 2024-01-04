@@ -34,45 +34,7 @@ const Home = () => {
       </video>
 
       <div className="homeContent container">
-         <div className="textDiv">
-           <span data-aos="fade-up" className="smallText">
-            Our Packages
-           </span>
-           <h1 data-aos="fade-up" className="homeTitle">
-            Search your Holiday
-           </h1>
-         </div>
-
-         <div data-aos="fade-up" className="carddiv grid">
-
-           <div className="destinationInput">
-            <label htmlFor="city">Search your Destination</label>
-           <div className="input flex">
-             <input type="text" placeholder="Enter your name..." />
-              <GrLocation className="icon"/>
-           </div>
-           </div>
-
-          <div className="dateInput">
-             <label htmlFor="date">Select your 
-             date:</label>
-            <div className="input flex">
-              <input type="date" />
-            </div>
-          </div>
-
-          <div className="priceInput">
-              <div className="label_total flex">
-                  <label htmlFor="price">MaxPrice:</label>
-                  <h3 className="total">$5000</h3>
-              </div>
-              <div className="input flex">
-                  <input type="range" max='5000' min='1000' />
-              </div>
-          </div>
-           
-        
-         </div>
+    
 
          <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcon">
@@ -81,10 +43,7 @@ const Home = () => {
              <a target="blank" href="https://www.tripadvisor.com/"> <SiTripadvisor className='icon'/></a>
          
           </div>
-          <div className="leftIcon">
-          <BsListTask className='icon'/>
-          <TbApps className='icon'/> 
-          </div>
+       
          </div>
       </div>
        
