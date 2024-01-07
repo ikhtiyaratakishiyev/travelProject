@@ -48,37 +48,26 @@ const Navbar = () => {
            <ul className="navLists flex">
               
                 <li className='navItem'>
-                     
-                    
-                      <Link  to='/'>
-                        <li className='navLink'>Home</li>
-                      </Link>
+                   <Link className='navLink'  to='/'>Home</Link>
                 </li>
 
                 <li className='navItem'>
-                  
-                        <Link  to='/packages'>
-                        <li className='navLink'>Packages</li>
-                      </Link>
-
+                   <Link className='navLink'  to='/packages'>Packages</Link>
                 </li>
 
                 <li className='navItem'>
-                     
-                      <Link to="/about" className='navLink'>About</Link>
+                   <Link to="/about" className='navLink'>About</Link>
                 </li>
 
                 <li className='navItem'>
-                <Link to="/contact" className='navLink'>Contacts</Link>
+                   <Link to="/contact" className='navLink'>Contacts</Link>
                 </li>
 
                 <li className='navItem' >
-                  <Link to='/packages'><button className='btn'>Book Now</button></Link>
+                   <Link to='/packages'><button className='btn'>Book Now</button></Link>
                 </li>
 
-                
-                    {/* <a href="#">Book Now</a> */}
-                  
+                                
            </ul>
 
            <div onClick={removeNavbar}  className="closeNavBar">

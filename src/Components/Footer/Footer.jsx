@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import video2 from '../../Assets/Videos/video2.mp4'
+import {Link} from 'react-router-dom'
 
 import {MdOutlineTravelExplore,} from 'react-icons/md'
 import {AiOutlineTwitter,AiFillYoutube,AiFillInstagram} from 'react-icons/ai'
@@ -13,6 +14,7 @@ import "./footer.scss"
 const Footer = () => {
 
     // lets create a react hook to add a scroll animation.
+
 
     useEffect(()=>{
         Aos.init({duration:2000})
@@ -65,10 +67,11 @@ const Footer = () => {
                     </div>
 
                     <div data-aos="fade-up" className="footerSocials flex">
-                      <AiOutlineTwitter className='icon'/>
-                      <AiFillYoutube className='icon'/>
-                      <AiFillInstagram className='icon'/>
-                      <FaTripadvisor className='icon'/>
+                      
+                      <a target='blank' href="https://twitter.com/" >   <AiOutlineTwitter className='icon'/></a>
+                      <a target='blank' href="https://www.youtube.com/" >   <AiFillYoutube className='icon'/></a>
+                      <a target='blank' href="https://www.instagram.com/" >  <AiFillInstagram className='icon'/></a>
+                      <a target='blank' href="https://www.tripadvisor.com/" >  <FaTripadvisor className='icon'/></a>
                     </div>
 
                     <div  className="footerLinks flex">
@@ -107,65 +110,77 @@ const Footer = () => {
                        <div data-aos="fade-up" data-aos-duration='4000' className="linkGroup">
                           <span className="groupTitle">
                           <h3>PARTNERS</h3>
+                             
+
                               <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Bookings
+                                 <a className='footerList flex' target='blank' href="https://www.booking.com/"> <FiChevronRight className='icon'/>Booking</a> 
                               </li>
 
                               <li className='footerList flex'>
-                                
-                                  <FiChevronRight className='icon'/>
-                                  Rentcars
+                                 <a className='footerList flex' target='blank' href="https://www.rentalcars.com/"> <FiChevronRight className='icon'/>Rentcars</a> 
                               </li>
 
                               <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Hostelworld
+                                 <a className='footerList flex' target='blank' href="https://www.hostelworld.com/"> <FiChevronRight className='icon'/>Hostelworld</a> 
+                              </li>
+                              <li className='footerList flex'>
+                                 <a className='footerList flex' target='blank' href="https://www.trivago.com/"> <FiChevronRight className='icon'/>Trivago</a> 
                               </li>
 
                               <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Trivago
-                              </li>
-
-                              <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Tripadvisor
+                                 <a className='footerList flex' target='blank' href="https://www.tripadvisor.com/"> <FiChevronRight className='icon'/>Tripadvisor</a> 
                               </li>
                           </span>
                       </div> 
 
+                    
 
-                      <div data-aos="fade-up" data-aos-duration='5000' className="linkGroup">
-                          <span className="groupTitle">
-                          <h3>LAST MINUTE</h3>
-                              <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  United Kingdom
-                              </li>
+                        
 
-                              <li className='footerList flex'>
-                                
-                                  <FiChevronRight className='icon'/>
-                                  California
-                              </li>
-
-                              <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Indonesia
-                              </li>
-
-                              <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Europe
-                              </li>
-
-                              <li className='footerList flex'>
-                                  <FiChevronRight className='icon'/>
-                                  Oceania
-                              </li>
-                          </span>
-                      </div> 
+                            <div  data-aos="fade-up" data-aos-duration='5000' className="linkGroup">
+                            <span className="groupTitle">
+                            <h3>LAST MINUTE</h3>
+                                <li  className='footerList flex'>
+                                <Link className='footerList flex'  to='/purchasingPage' >
+                                    <FiChevronRight className='icon'/>
+                                    Baku
+                                </Link>
+                                   
+                                </li>
+  
+                                <li className='footerList flex'>
+                                <Link className='footerList flex'  to='/purchasingPage' >
+                                    <FiChevronRight className='icon'/>
+                                    Moscow
+                                </Link>
+                                </li>
+  
+                                <li className='footerList flex'>
+                                <Link className='footerList flex'  to='/purchasingPage' >
+                                    <FiChevronRight className='icon'/>
+                                    Istanbul
+                                </Link>
+                                </li>
+  
+                                <li className='footerList flex'>
+                                <Link className='footerList flex'  to='/purchasingPage' >
+                                    <FiChevronRight className='icon'/>
+                                    Bora Bora
+                                </Link>
+                                </li>
+  
+                                <li className='footerList flex'>
+                                <Link className='footerList flex'  to='/purchasingPage' >
+                                    <FiChevronRight className='icon'/>
+                                    India
+                                </Link>
+                                </li>
+                            </span>
+                        </div> 
+                        
+                        
+                    
+                   
 
                       <div  className="footerDiv flex">
                          <small>BEST TRAVEL WEBSITE THEME</small>

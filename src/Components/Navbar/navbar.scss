@@ -101,11 +101,12 @@
         .header{
            .toggleNavbar{
               display: flex;
+              
            }
         }
            .navBar{
                position: absolute;
-               background: var(--whiteColorDeam);
+               background: var(--whiteColor);
                height: max-content;
                width: 80%;
                border-radius: 1rem;
@@ -124,9 +125,10 @@
                   margin: auto;
                   padding: .5rem 0;
                    .navLink{
-                       color: var(--textColor);
+                       color: var(--blackColor);
+                       
                        font-size: .9rem;
-                       font-weight: 600;
+                       font-weight: bold;
                        &:hover{
                           color: var(--PrimaryColor); 
                        }
@@ -135,15 +137,16 @@
    
                .btn{
                    margin-top: 1rem;
-   
+             
                    a{
-                       font-weight: 600;
-                       color: var(--whiteColor);
+                       font-weight: bold;
+                       color: var(--blackColor);
                    }
                }
            
                .closeNavBar{
                    display: flex;
+                   
                    position: absolute;
                    top: 1rem;
                    right: 1.5rem;

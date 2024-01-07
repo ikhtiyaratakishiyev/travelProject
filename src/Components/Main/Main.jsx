@@ -48,6 +48,7 @@ const Main = () => {
              return(
 
               <div onClick={()=>clickHandle(id)} key={id} data-aos="fade-up" className="singleDestination">
+                
                   <div  className="imageDiv">
                       <img src={img1} alt={destTitle} />
                   </div>
@@ -76,6 +77,7 @@ const Main = () => {
                          DETAILS <HiOutlineClipboardCheck className='icon'/>
                      </button>
                   </div>
+
               </div>
              )
           })
